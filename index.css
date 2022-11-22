@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'alte_haas_groteskbold';
+    src: url('assets/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('assets/altehaasgroteskbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 p{
-    position: fixed;
-    left: 1vw;
-    top:1vh;
-    font-size: 20pt;
-    writing-mode: vertical-lr;
-text-orientation: mixed;
+    font-family: 'alte_haas_groteskbold';
+   font-size: 15pt;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
