@@ -1,0 +1,31 @@
+all rights reserved ©Hanzhi Zhang
+website designed and run by Haiyu Zhou
+
+------11/23/2022 First commit------
+the website is consists of 1 parent website and 5 child websites. In the 5 child websites there are 4 for individual projects and 1 for analog photography. Contact information of Hanzhi Zhang is displayed on the left side of the main page. Images and videos are pulled from online archive (Airtable).
+
+------11/24/2022 2nd commit------
+The horizontal scrolling is enabled.
+database is connected to the website, however variable isn't correctly defined.
+
+------11/25/2022 3th commit------
+all images are properly displayed.
+scroll animation need to be improved. --- more smooth
+
+------11/26/2022 4th commit------
+child pages done.
+all pages are using the same CSS file(in the main folder: ../index.css)
+homepage use one javascript file(../index.js); child pages sharing the same javascript (../child-index.js).
+manually ragged all text (9 or so words)
+
+cannot bold the text in bio, because the font is already bold.
+
+------12/8/2022 5th commit------
+
+The mobile version
+the website uses vertically scrolling. Each project there's one main image, 100% opacity, large. the rest of the images, 30% opacity, smaller, overlapping each other.
+
+
+------1/7/2023 6th commit------
+
+Add 2 projects: daisy suit; 你我
