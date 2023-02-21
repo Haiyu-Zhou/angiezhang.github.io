@@ -1,11 +1,16 @@
-//horizontal scrolling
+//screen width > 700, then horizontal scrolling
+let widthW = window.innerWidth;
+console.log(widthW);
+if (widthW > 700){
 let backgroundContainer = document.querySelector(".child-background-container");
 backgroundContainer.addEventListener("wheel", function (mouseScroll) {
-  //console.log("mouse scrolled for", mouseScroll);
+// console.log("mouse scrolled for", mouseScroll);
   mouseScroll.preventDefault();
   backgroundContainer.scrollLeft =
     backgroundContainer.scrollLeft + mouseScroll.deltaY;
 });
+}
+
 
 //step 1: variables
 const airtableApiKey = "keyBaUp0xKPE8ASU2";
