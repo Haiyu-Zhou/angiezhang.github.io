@@ -261,7 +261,7 @@ body::-webkit-scrollbar {
     width: 20px;
     position: fixed;
     bottom: 10px;
-    right: 25vw;
+    right: 30vw;
     z-index: 100;
     padding: 10px;
   }
@@ -324,7 +324,7 @@ body::-webkit-scrollbar {
   .child-t{
     position: relative;
     width:60vw;
-    left: 20%;
+    left: 10%;
     top:20%;
     margin: 0%;
     color: white;
@@ -336,7 +336,7 @@ body::-webkit-scrollbar {
     position: relative;
     inline-size: 24vw;
     word-wrap: break-word;
-    left: 25vw;
+    left: 20vw;
     top:55%;
     margin: 0%;
     color: white;
