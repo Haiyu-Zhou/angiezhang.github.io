@@ -326,12 +326,16 @@ div#copyright{
     background-color: black;
   
   }
-
-  .child-image{
+  div.container{
     width:100vw;
+    height:auto;
+  }
+
+  img.child-image{
+    width:100%;
+    height:auto;
     display: inline-block;
     flex-shrink: 0;
-    gap:0;
   }
   .child-t{
     position: relative;
@@ -379,6 +383,11 @@ div.container{
 
 p.child-text-computer{
   display: none;
+}
+
+*{
+  margin:0;
+  padding:0;
 }
 
 }
