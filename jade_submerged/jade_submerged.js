@@ -12,10 +12,11 @@ backgroundContainer.addEventListener("wheel", function (mouseScroll) {
 }
 
 //step 1: variables
-const airtableApiKey = "keyBaUp0xKPE8ASU2";
-const airtableDatabaseUrl =
-  "https://api.airtable.com/v0/apppkcq6q875cTDkb/Table%201";
-const authenticatedUrl = airtableDatabaseUrl + "?api_key=" + airtableApiKey;
+const airtableToken = "patDxyprgeKgSu7gP.5e8d74b49ec46bcd0ec171cf905b659c3d3e74fe0fbe5dd1d4252b60bfd638d4";
+const airtableBaseUrl = "https://api.airtable.com/v0";
+const airtableBaseId = "apppkcq6q875cTDkb";
+const airtableTableName = "Assets";
+const airtableUrl = `${airtableBaseUrl}/${airtableBaseId}/${airtableTableName}`;
 
 //step 2: get references to DOM
 const jContainerElement = document.querySelector(
@@ -23,12 +24,13 @@ const jContainerElement = document.querySelector(
 );
   //step 3: application
 //fetch the data
-const fetchPromise = fetch(authenticatedUrl);
-const jsonPromise = fetchPromise.then((response) => {
-  return response.json();
-});
-//get each set of images into their containers
-jsonPromise.then((data) => {
+fetch(airtableUrl, {
+  headers: {
+    Authorization: `Bearer ${airtableToken}`,
+  },
+})
+.then((response) => 
+  response.json()).then((data) => {
   console.log(data);
   const records = data.records;
   for (let index = 0; index < records.length; index++) {
